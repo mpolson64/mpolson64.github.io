@@ -1,0 +1,50 @@
+---
+---
+
+@import "main";
+
+.content-wrap {
+    margin-bottom: 8em;
+    .content {
+      margin-top: 5em;
+      margin-left: 5em;
+
+      h3.title {
+        position: relative;
+        margin-bottom: 1.5em;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 1.5em;
+          left: 0;
+          width: 3em;
+          height: 3px;
+          background-color: #ECEFF1;
+        }
+      }
+      .flavor {
+        width: 80%;
+
+      }
+      button{
+        font-size: 16px;
+        margin-left: 0;
+        margin-bottom: 1em;
+        margin-top: 1em;
+      }
+      .tags {
+        margin: 2em 0;
+        span {
+          color: #9eb1bd;
+          background-color: #ECEFF1;
+          padding: 0.5em 1.5em;
+          display: inline-block;
+          margin-bottom: 0.5em;
+        }
+      }
+      .categories span {
+        color: #b9b1ad;
+        background-color: #EFEBE9;
+      }
+    }
+  }

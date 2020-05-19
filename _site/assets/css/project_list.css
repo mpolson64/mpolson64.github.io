@@ -2412,16 +2412,22 @@ body { font: 100% "Open Sans Light", sans-serif; line-height: 1.6; font-weight: 
 
 p { font-size: 1.2rem; }
 
-.hero-container { margin: 10em 0 9em 0; }
+.content-wrap { margin-bottom: 8em; }
 
-.hero-content { width: 60%; margin: 0 auto; display: table; }
+.content-wrap .content { margin-top: 5em; margin-left: 5em; }
 
-.hero-content h1 { font-size: 48px; }
+.content-wrap .content h3.title { position: relative; margin-bottom: 1.5em; }
 
-.hero-content p { margin: 2em 0 4em 0; }
+.content-wrap .content h3.title:after { content: ''; position: absolute; top: 1.5em; left: 0; width: 3em; height: 3px; background-color: #ECEFF1; }
 
-.section-title { position: relative; margin: 0 auto; margin-bottom: 1em; }
+.content-wrap .content .flavor { width: 80%; }
 
-.section-title:after { content: ''; position: absolute; top: 1.35em; width: 3em; height: 3px; background-color: #ECEFF1; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+.content-wrap .content button { font-size: 16px; margin-left: 0; margin-bottom: 1em; margin-top: 1em; }
 
-/*# sourceMappingURL=splash.css.map */
+.content-wrap .content .tags { margin: 2em 0; }
+
+.content-wrap .content .tags span { color: #9eb1bd; background-color: #ECEFF1; padding: 0.5em 1.5em; display: inline-block; margin-bottom: 0.5em; }
+
+.content-wrap .content .categories span { color: #b9b1ad; background-color: #EFEBE9; }
+
+/*# sourceMappingURL=project_list.css.map */
