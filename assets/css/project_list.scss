@@ -5,6 +5,7 @@
 
 .content-wrap {
     margin-bottom: 8em;
+    
     .content {
       margin-top: 5em;
       margin-left: 5em;
@@ -20,6 +21,10 @@
           width: 3em;
           height: 3px;
           background-color: #ECEFF1;
+        }
+
+        a {
+            color: black;
         }
       }
       .flavor {
@@ -47,4 +52,12 @@
         background-color: #EFEBE9;
       }
     }
+
+    .row {
+        margin-bottom: 5em;
+    }
+  }
+
+  .img-project {
+      max-height: 300px;
   }
