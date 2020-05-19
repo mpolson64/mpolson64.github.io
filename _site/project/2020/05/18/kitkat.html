@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<title>Miles Olson  -  KitKat</title>
+
+    <link rel="stylesheet" href="/assets/css/post.css">
+  </head>
+  
+  <body>
+    
+
+
+<link rel="stylesheet" href="/assets/css/navigation.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">Miles Olson</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a  class="nav-item nav-link"  href="/">Home</a>
+
+        <a  class="nav-item nav-link"  href="/projects.html">Projects</a>
+        <a  class="nav-item nav-link"  href="/about.html">About</a>
+        <!-- TODO: Add github, linkedin glyph links -->
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+      <p>TODO: Proofread</p>
+
+<p>The summer after my freshman year at Rice I was lucky enough to participate in Facebook University for Engineering, an internship program for students from underrepresented communities.
+During the internship I worked with two other students to create KitKat, an iOS app that allows atendees to collaboratively DJ their event by nominating songs for the host to play and voting on other guests’ nominations.
+The app uses the Spotify SDK for in-app playback and searching as well as a custom backend written in Node.js that allows users to interact in real time.
+The basic user story is as follows:</p>
+
+<p>Upon launch users are greeted with a map of their current area populated with pins repesenting local parties.
+A user can tap a pin to view information about the event (host, address, etc.) as well as the current <em>Queue</em>.
+A user may also host a party with the <em>Create</em> button, which will spawn a new party at their current location of which they are the DJ.
+Creating a party also creates a corresponding playlist in their Spotify account they can access any time, even after the party has been deleted.</p>
+
+<p>Once a user enters a party they are sent to the main screen of the app containing four tabs, the first being the <em>Pool</em>, a collection of songs other partygoers have nominated.
+Here users are able to upvote and downvote songs, as well as add songs of there own through the search flow, who’s results are pulled directly from Spotify.
+If the user is the party’s DJ, a plus button appears next to each song and they are able to add songs from the <em>Pool</em> to the <em>Queue</em>.
+The <em>Pool</em> is live updated so any change a user makes is immediately reflected on all other user’s apps.</p>
+
+<p>The <em>Queue</em> tab shows a list of all songs that will be played.
+If the user is the party’s DJ, an edit button is visible and the user can move and delete songs.
+The <em>Queue</em> is also mirrored in the DJ’s Spotify account as a playlist bearing the same name as the party so the DJ can review the songs played after the party has finished.
+Like the <em>Pool</em>, the <em>Queue</em> is live updated.</p>
+
+<p>The now playing tab shows information about the currently playing track, and if accessed by the DJ contains controls to pause, go back, and skip through the <em>Queue</em>.</p>
+
+<p>Finally, the user tab shows all songs a user has added throughout the party as well as counts how many remain in the pool and how many have been selected to move into the queue.
+These heuristics, along with the number of upvotes each song accrued, are combined to generate a score for the user.</p>
+
+<p>The app is driven by a REST API built with Expressjs and Mongoose (a MongoDB client) on a Heroku server running Node.
+The server has models for Songs, Parties, and Users, and has a number of routes that directly edit these objects as well as many that deal common data interactions, such as moving a song from the <em>Pool</em> to the <em>Queue</em>.</p>
+
+<p>I spent a majority of my time on this project designing and building the database.
+With the database I wanted to something that would be quick to build (the backend was not to be a focus of our end product, which was meant to be no more than a tech demo) yet also complex enough to store the complex relationships between objects.
+While a simple MongoDB solution seemed appropriate at first, it certainly was quick to build, as we added features to the app it seemed a graph database would have been a better choice; the relationships between Songs, Users, and votes specifically would have lent itself better to a graph model.
+Due to time constraints, I wound up sticking with MongoDB and just passing pointers around.
+Not terribly ellegant but it got the job done.</p>
+
+<p>My work on the app itself was essentialy split between devising an easy way to communicate with the server (I used a basic callback pattern) and the basic functionality of the pool and queue page, both of which use very simillar <em>CELL THINGS</em>.
+Because of the similarities I did by best to abstract using object oriented patterns.
+I also built the map splash screen using stock MapKit.</p>
+
+    </div>
+  </body>
+</html>

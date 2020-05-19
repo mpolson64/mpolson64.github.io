@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/default.css' | relative_url }}">
+  </head>
+
+  <body>
+    {% include navigation.html %}
+
+    <div class="container">
+      {{ content }}
+    </div>
+  </body>
+</html>
