@@ -2,19 +2,45 @@
 <html>
   <head>
     {% include head.html %}
-    <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/splash.css' | relative_url }}">
   </head>
   <body>
     {% include navigation.html %}
-    
-      <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello. I'm Miles.</h1>
-            <p class="lead">I'm a Computer Science and Applied Math student at Rice University.</p>
+
+    <div class="container">
+
+        <div class="row">
+      
+          <div class="col-md-12">
+      
+            <div class="hero-container">
+      
+              <div class="hero-content">
+      
+                
+                <h1 class="text-center">My name is Miles Olson.</h1>
+                
+      
+                
+                <p class="text-center">I'm a Computer Science and Applied Math student at Rice University.
+      </p>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+      
         </div>
-    
-        {% include project_list.html %}
+      
       </div>
+
+    <div class="container">
+        <h2>
+            Projects
+        </h2>
+        {% include project_list.html %}
+    </div>
 
   </body>
 </html>

@@ -1,1 +1,20 @@
 @import 'bootstrap/bootstrap';
+
+$font-stack: 'Open Sans Light', sans-serif;
+
+h1 {
+    font-family: 'Merriweather', serif;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+body {
+    font: 100% $font-stack;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+p {
+    @extend .text-justify;
+    font-size: 1.2rem;
+}

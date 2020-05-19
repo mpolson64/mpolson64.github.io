@@ -2412,4 +2412,12 @@ body { font: 100% "Open Sans Light", sans-serif; line-height: 1.6; font-weight: 
 
 p { font-size: 1.2rem; }
 
-/*# sourceMappingURL=post.css.map */
+.hero-container { margin: 10em 0 9em 0; }
+
+.hero-content { width: 60%; margin: 0 auto; display: table; }
+
+.hero-content h1 { font-size: 48px; }
+
+.hero-content p { margin: 2em 0 4em 0; }
+
+/*# sourceMappingURL=splash.css.map */
