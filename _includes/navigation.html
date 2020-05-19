@@ -15,7 +15,9 @@
 
         <a {% if page.title == "Projects" %} class="{{active_class}}" {% else %} class="{{inactive_class}}" {% endif %} href="{{ '/projects.html' | relative_url }}">Projects</a>
         <a {% if page.title == "About" %} class="{{active_class}}" {% else %} class="{{inactive_class}}" {% endif %} href="{{ '/about.html' | relative_url }}">About</a>
-        <!-- TODO: Add github, linkedin glyph links -->
+
+        <a class="{{inactive_class}}" href="https://github.com/mpolson64"><i class="fab fa-github"></i></a>
+        <a class="{{inactive_class}}" href="https://www.linkedin.com/in/mpolson64/"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </div>

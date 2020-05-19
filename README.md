@@ -3,7 +3,7 @@ Personal site of Miles Olson
 
 ## TODO
 - [x] Basic layout
-- [ ] Styling
+- [x] Styling
 - [ ] Write content
 - [ ] Favicon
-- [ ] Glyph links
+- [x] Icon links
