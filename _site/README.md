@@ -5,7 +5,7 @@ Personal site of Miles Olson
 - [x] Basic layout
 - [x] Styling
 - [x] Icon links
-- [ ] Images as links
+- [x] Images as links
 - [ ] Images to web format and better size
 - [ ] Bootstrap 5?
 - [ ] Photos in about page
