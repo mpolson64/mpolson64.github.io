@@ -1,0 +1,18 @@
+---
+layout: post
+title: ClutteredEnvPathOpt.jl
+author: Miles Olson
+flavor: Lorem Ipsum
+source: 
+image_path: /assets/images/separator.png
+categories: [project]
+tags: [Julia]
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue sed orci consequat congue sed eget nunc. Etiam malesuada tincidunt arcu, a congue metus suscipit eu. Mauris interdum nulla nibh, commodo pellentesque turpis varius eget. Etiam ut lectus eget velit mattis sodales sit amet vitae leo. Ut ultricies mauris risus, ut varius lorem congue sit amet. Cras pellentesque sapien id arcu tristique, accumsan volutpat massa porta. In varius vestibulum urna. Nunc egestas, sapien id elementum feugiat, leo velit mattis enim, vitae dapibus erat justo et risus. Nam ligula dolor, sollicitudin at placerat at, rhoncus eget odio. Maecenas sollicitudin turpis dolor, sed vehicula ex condimentum vitae. Curabitur non cursus nisl. Aenean posuere efficitur dolor. Integer dignissim erat non sapien gravida fermentum. In dolor magna, hendrerit sit amet porttitor eget, lacinia at dolor. Ut luctus ut urna id gravida.
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ullamcorper turpis id dolor aliquam, id efficitur nulla porttitor. Quisque laoreet diam nec porttitor lacinia. Vestibulum luctus, arcu nec viverra auctor, tortor risus finibus turpis, vitae varius leo odio suscipit tellus. Vivamus faucibus diam velit, id tincidunt est tempor vel. Cras et varius ante. Vestibulum finibus tortor eget lectus congue aliquet. Quisque ut porta metus. Vestibulum ac eros quis tortor posuere lacinia in auctor eros. Phasellus lectus velit, dictum ac urna vel, vestibulum bibendum sem. Sed suscipit lectus quam, sed tempor orci pulvinar at. Pellentesque eu ipsum leo. Nam eget hendrerit nunc, id porttitor leo.
+
+Vestibulum consequat, est quis porttitor posuere, purus dui ornare lacus, ut tempor velit ipsum a urna. Nullam at molestie ex. Curabitur auctor lorem at quam viverra, vitae malesuada odio venenatis. Vestibulum viverra, erat id tempor laoreet, eros dolor convallis nunc, a iaculis lorem lacus in orci. Donec vitae neque ultrices, porttitor ipsum et, auctor mi. Aliquam scelerisque maximus ligula eu tincidunt. Duis massa elit, ullamcorper vel lacus vel, ornare imperdiet ex. Proin nec diam suscipit, bibendum libero posuere, congue tortor. Duis in ipsum orci. Mauris vitae turpis dictum, luctus nunc at, faucibus tortor. Mauris commodo nisi erat, ut faucibus ipsum scelerisque vitae. Quisque tempor augue et enim condimentum vestibulum. Etiam sit amet nisl ac felis placerat eleifend.
+
+Morbi id ligula in neque dignissim consectetur. Ut sit amet faucibus urna, eu scelerisque ex. Pellentesque quis justo ligula. Sed dictum ligula magna, vitae tempus nisi consequat et. Cras aliquam, metus id finibus suscipit, velit erat tempus nunc, at varius nisl magna at eros. Suspendisse ut mollis quam. Integer et mi non libero dapibus ultrices. Mauris dictum velit mauris, at venenatis urna aliquam sit amet. Maecenas vel vehicula erat. Etiam laoreet orci ultrices, feugiat enim et, eleifend urna. Donec semper interdum nisi. Sed porttitor pulvinar elementum.

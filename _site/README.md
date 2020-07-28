@@ -6,4 +6,4 @@ Personal site of Miles Olson
 - [x] Styling
 - [ ] Write content
 - [ ] Favicon
-- [x] Glyph links
+- [x] Icon links
