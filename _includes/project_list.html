@@ -19,7 +19,9 @@
           </div>
       
           <div class="col-xs-12 col-md-6">
-            <img class="img-fluid img-project mx-auto d-block" src="{{ post.image_path }}" title="{{ post.title }}">
+            <a href="{{ post.url }}">
+              <img class="img-fluid img-project mx-auto d-block" src="{{ post.image_path }}" title="{{ post.title }}">
+            </a>
           </div>
         </div>
       {% endfor %}

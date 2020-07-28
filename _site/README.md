@@ -4,6 +4,10 @@ Personal site of Miles Olson
 ## TODO
 - [x] Basic layout
 - [x] Styling
+- [x] Icon links
+- [ ] Images as links
+- [ ] Images to web format and better size
+- [ ] Bootstrap 5?
+- [ ] Photos in about page
 - [ ] Write content
 - [ ] Favicon
-- [x] Icon links
