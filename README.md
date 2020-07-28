@@ -3,7 +3,11 @@ Personal site of Miles Olson
 
 ## TODO
 - [x] Basic layout
-- [ ] Styling
+- [ ] Images as links
+- [ ] Cluttered post
+- [ ] Images to web format and better size
+- [ ] Bootstrap 5?
+- [ ] Photos in about page
 - [ ] Write content
 - [ ] Favicon
 - [ ] Glyph links
