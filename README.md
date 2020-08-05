@@ -7,7 +7,6 @@ Personal site of Miles Olson
 - [x] Icon links
 - [x] Images as links
 - [ ] Images to web format and better size
-- [ ] Bootstrap 5?
 - [ ] Photos in about page
 - [ ] Write content
 - [ ] Favicon

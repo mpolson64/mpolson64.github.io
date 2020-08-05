@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
+  </head>
+  
+  <body>
+    {% include navigation.html %}
+
+    <div class="container">
+      <h1>
+        {{page.title}}
+      </h1>
+
+      <img class="float-left" src="/assets/images/miles.jpg" title="Miles Olson" height="620px" style="padding-right: 24px;">
+
+      {{ content }}
+    </div>
+  </body>
+</html>
