@@ -37,14 +37,11 @@
 </nav>
 
     <div class="container">
-      <h1>
-        KitKat
-      </h1>
+      <h1 class="display-3">KitKat</h1>
+      <h3 class="text-muted">Facebook University</h3>
       <img class="img-fluid mx-auto d-block" src="/assets/images/kitkat.png" title="KitKat">
 
-      <p>TODO: Proofread</p>
-
-<p>The summer after my freshman year at Rice I was lucky enough to participate in Facebook University for Engineering, an internship program for students from underrepresented communities.
+      <p>The summer after my freshman year at Rice I was lucky enough to participate in Facebook University for Engineering, an internship program for students from communities underrepresented in the field.
 During the internship I worked with two other students to create KitKat, an iOS app that allows atendees to collaboratively DJ their event by nominating songs for the host to play and voting on other guests’ nominations.
 The app uses the Spotify SDK for in-app playback and searching as well as a custom backend written in Node.js that allows users to interact in real time.
 The basic user story is as follows:</p>
@@ -73,14 +70,18 @@ These heuristics, along with the number of upvotes each song accrued, are combin
 The server has models for Songs, Parties, and Users, and has a number of routes that directly edit these objects as well as many that deal common data interactions, such as moving a song from the <em>Pool</em> to the <em>Queue</em>.</p>
 
 <p>I spent a majority of my time on this project designing and building the database.
-With the database I wanted to something that would be quick to build (the backend was not to be a focus of our end product, which was meant to be no more than a tech demo) yet also complex enough to store the complex relationships between objects.
-While a simple MongoDB solution seemed appropriate at first, it certainly was quick to build, as we added features to the app it seemed a graph database would have been a better choice; the relationships between Songs, Users, and votes specifically would have lent itself better to a graph model.
+With the database I wanted to something that would be quick to build (the backend was not to be a focus of our end product, which was meant to be no more than a tech demo) yet also expressive enough to store the complex relationships between objects in our data model.
+While a simple MongoDB solution seemed appropriate at first, it certainly was quick to build, as we added features to the app it seemed a graph database would have been a better choice; the relationships between Songs, Users, and Votes specifically would have lent itself better to a graph model.
 Due to time constraints, I wound up sticking with MongoDB and just passing pointers around.
-Not terribly ellegant but it got the job done.</p>
+It got the job done, but it was certainly a pain point for us as our feature set grew and given the chance to rewrite the backend service I would probably elect to organize our data in a different way.</p>
 
-<p>My work on the app itself was essentialy split between devising an easy way to communicate with the server (I used a basic callback pattern) and the basic functionality of the pool and queue page, both of which use very simillar <em>CELL THINGS</em>.
-Because of the similarities I did by best to abstract using object oriented patterns.
-I also built the map splash screen using stock MapKit.</p>
+<p>My work on the frontend was much more ad-hoc.
+Much of my time was spent on creating utility functions and structures to improve the ergonomics of accessing the API from within the app.
+Then, I spent some time creating a basic UI framework for the the basic functionality of the pool and queue page.
+I also built the map splash screen using stock Apple MapKit.</p>
+
+<p>I had a wonderful time in FBU and am happy I was able to participate.
+I learned a lot through the process, and it was a fantastic kickstart to my career in software engineering.</p>
 
     </div>
   </body>
