@@ -45,22 +45,22 @@
       <img class="img-fluid mx-auto d-block" src="/assets/images/kitkat.png" title="KitKat">
 
       <p>The summer after my freshman year at Rice I was lucky enough to participate in Facebook University for Engineering, an internship program for students from communities underrepresented in the field.
-During the internship I worked with two other students to create KitKat, an iOS app that allows atendees to collaboratively DJ their event by nominating songs for the host to play and voting on other guests’ nominations.
+During the internship I worked with two other students to create KitKat, an iOS app that allows attendees to collaboratively DJ their event by nominating songs for the host to play and voting on other guests’ nominations.
 The app uses the Spotify SDK for in-app playback and searching as well as a custom backend written in Node.js that allows users to interact in real time.
 The basic user story is as follows:</p>
 
-<p>Upon launch users are greeted with a map of their current area populated with pins repesenting local parties.
-A user can tap a pin to view information about the event (host, address, etc.) as well as the current <em>Queue</em>.
-A user may also host a party with the <em>Create</em> button, which will spawn a new party at their current location of which they are the DJ.
+<p>Upon launch users are greeted with a map of their current area populated with pins representing local parties.
+A user can tap a pin to view information about the event (host, address, etc.) as well as the current <em>Queue</em>.
+A user may also host a party with the <em>Create</em> button, which will spawn a new party at their current location of which they are the DJ.
 Creating a party also creates a corresponding playlist in their Spotify account they can access any time, even after the party has been deleted.</p>
 
-<p>Once a user enters a party they are sent to the main screen of the app containing four tabs, the first being the <em>Pool</em>, a collection of songs other partygoers have nominated.
-Here users are able to upvote and downvote songs, as well as add songs of there own through the search flow, who’s results are pulled directly from Spotify.
+<p>Once a user enters a party, they are sent to the main screen of the app containing four tabs, the first being the <em>Pool</em>, a collection of songs other partygoers have nominated.
+Here users are able to upvote and downvote songs, as well as add songs of their own through the search flow, who’s results are pulled directly from Spotify.
 If the user is the party’s DJ, a plus button appears next to each song and they are able to add songs from the <em>Pool</em> to the <em>Queue</em>.
 The <em>Pool</em> is live updated so any change a user makes is immediately reflected on all other user’s apps.</p>
 
 <p>The <em>Queue</em> tab shows a list of all songs that will be played.
-If the user is the party’s DJ, an edit button is visible and the user can move and delete songs.
+If the user is the party’s DJ, an edit button is visible, and the user can move and delete songs.
 The <em>Queue</em> is also mirrored in the DJ’s Spotify account as a playlist bearing the same name as the party so the DJ can review the songs played after the party has finished.
 Like the <em>Pool</em>, the <em>Queue</em> is live updated.</p>
 
@@ -76,11 +76,11 @@ The server has models for Songs, Parties, and Users, and has a number of routes 
 With the database I wanted to something that would be quick to build (the backend was not to be a focus of our end product, which was meant to be no more than a tech demo) yet also expressive enough to store the complex relationships between objects in our data model.
 While a simple MongoDB solution seemed appropriate at first, it certainly was quick to build, as we added features to the app it seemed a graph database would have been a better choice; the relationships between Songs, Users, and Votes specifically would have lent itself better to a graph model.
 Due to time constraints, I wound up sticking with MongoDB and just passing pointers around.
-It got the job done, but it was certainly a pain point for us as our feature set grew and given the chance to rewrite the backend service I would probably elect to organize our data in a different way.</p>
+It got the job done, but it was certainly a pain point for us as our feature set grew and given the chance to rewrite the backend service, I would probably elect to organize our data in a different way.</p>
 
 <p>My work on the frontend was much more ad-hoc.
 Much of my time was spent on creating utility functions and structures to improve the ergonomics of accessing the API from within the app.
-Then, I spent some time creating a basic UI framework for the the basic functionality of the pool and queue page.
+Then, I spent some time creating a basic UI framework for the basic functionality of the pool and queue page.
 I also built the map splash screen using stock Apple MapKit.</p>
 
 <p>I had a wonderful time in FBU and am happy I was able to participate.
