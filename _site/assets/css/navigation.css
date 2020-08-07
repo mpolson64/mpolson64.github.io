@@ -2412,6 +2412,8 @@ body { font: 100% Helvetica, Arial, sans-serif; line-height: 1.6; font-weight: 3
 
 p { font-size: 1.2rem; }
 
+a { color: darkblue; }
+
 .navbar { background-color: white; }
 
 /*# sourceMappingURL=navigation.css.map */

@@ -2412,6 +2412,8 @@ body { font: 100% Helvetica, Arial, sans-serif; line-height: 1.6; font-weight: 3
 
 p { font-size: 1.2rem; }
 
+a { color: darkblue; }
+
 .hero-container { margin: 10em 0 9em 0; }
 
 .hero-content { width: 60%; margin: 0 auto; display: table; }

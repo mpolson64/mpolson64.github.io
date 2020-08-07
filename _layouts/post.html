@@ -9,8 +9,11 @@
     {% include navigation.html %}
 
     <div class="container">
-      <h1 class="display-3">{{page.title}}</h1>
-      <h3 class="text-muted">{{page.flavor}}</h3>
+      <h1>
+        {{page.title}}
+        <small class="text-muted">{{page.flavor}}</small>
+      </h1>
+      {% if page.source %}<h3><a href="{{ page.source }}"><i class="fab fa-github"></i>{{ page.source | remove_first: "https://github.com" }}</a></h3>{% endif %}
       <img class="img-fluid mx-auto d-block" src="{{ page.image_path }}" title="{{ page.title }}">
 
       {{ content }}
