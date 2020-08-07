@@ -9,4 +9,4 @@ Personal site of Miles Olson
 - [ ] Images to web format and better size
 - [x] Photos in about page
 - [x] Write content
-- [ ] Favicon
+- [x] Favicon
