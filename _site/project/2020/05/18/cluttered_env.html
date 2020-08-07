@@ -38,16 +38,22 @@
 
     <div class="container">
       <h1 class="display-3">ClutteredEnvPathOpt.jl</h1>
-      <h3 class="text-muted">Lorem Ipsum</h3>
+      <h3 class="text-muted">Implementing Algorithms Efficiently in Julia</h3>
       <img class="img-fluid mx-auto d-block" src="/assets/images/separator.png" title="ClutteredEnvPathOpt.jl">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel augue sed orci consequat congue sed eget nunc. Etiam malesuada tincidunt arcu, a congue metus suscipit eu. Mauris interdum nulla nibh, commodo pellentesque turpis varius eget. Etiam ut lectus eget velit mattis sodales sit amet vitae leo. Ut ultricies mauris risus, ut varius lorem congue sit amet. Cras pellentesque sapien id arcu tristique, accumsan volutpat massa porta. In varius vestibulum urna. Nunc egestas, sapien id elementum feugiat, leo velit mattis enim, vitae dapibus erat justo et risus. Nam ligula dolor, sollicitudin at placerat at, rhoncus eget odio. Maecenas sollicitudin turpis dolor, sed vehicula ex condimentum vitae. Curabitur non cursus nisl. Aenean posuere efficitur dolor. Integer dignissim erat non sapien gravida fermentum. In dolor magna, hendrerit sit amet porttitor eget, lacinia at dolor. Ut luctus ut urna id gravida.</p>
+      <p>During my junior year at Rice University I worked as a research assistant for Joey Huchette on a project involving using Mixed Integer Programming to efficiently optimize quadcopter pathing through obstacle laden environments.
+The technique hinged on an innovative use of a divide-and-conquer style algorithm to calculate a biqlique cover of a planar-like graph representing the environment and its obstacles.
+My responsibility was to implement this algorithm in Julia with speed and correctness as priority.</p>
 
-<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer ullamcorper turpis id dolor aliquam, id efficitur nulla porttitor. Quisque laoreet diam nec porttitor lacinia. Vestibulum luctus, arcu nec viverra auctor, tortor risus finibus turpis, vitae varius leo odio suscipit tellus. Vivamus faucibus diam velit, id tincidunt est tempor vel. Cras et varius ante. Vestibulum finibus tortor eget lectus congue aliquet. Quisque ut porta metus. Vestibulum ac eros quis tortor posuere lacinia in auctor eros. Phasellus lectus velit, dictum ac urna vel, vestibulum bibendum sem. Sed suscipit lectus quam, sed tempor orci pulvinar at. Pellentesque eu ipsum leo. Nam eget hendrerit nunc, id porttitor leo.</p>
+<p>Much of my work centered on understanding the Lipton-Tarjan planar separator theorem.
+Using the theorem as a starting point I wrote a number of functions in Julia implementing its principles with slight variation and compared their real world performance as the size of the input graph changed both in number of nodes and in number of edges.
+Our priority was to find a function that could quickly produce separations with balanced sides and small separators.
+Once I was satisfied with the performance, I modified the fastest function to operate on finite element graphs, the planar-like meshes our quadcopter routing problem would take as input.
+Finally, I implemented a divide-and-conquer style algorithm to find the biqlique cover of a finite element graph a la mergesort, using the serparator algorithm to parition the graph into progressively smaller pieces to recursively call the biqlique cover calculating function on again.</p>
 
-<p>Vestibulum consequat, est quis porttitor posuere, purus dui ornare lacus, ut tempor velit ipsum a urna. Nullam at molestie ex. Curabitur auctor lorem at quam viverra, vitae malesuada odio venenatis. Vestibulum viverra, erat id tempor laoreet, eros dolor convallis nunc, a iaculis lorem lacus in orci. Donec vitae neque ultrices, porttitor ipsum et, auctor mi. Aliquam scelerisque maximus ligula eu tincidunt. Duis massa elit, ullamcorper vel lacus vel, ornare imperdiet ex. Proin nec diam suscipit, bibendum libero posuere, congue tortor. Duis in ipsum orci. Mauris vitae turpis dictum, luctus nunc at, faucibus tortor. Mauris commodo nisi erat, ut faucibus ipsum scelerisque vitae. Quisque tempor augue et enim condimentum vestibulum. Etiam sit amet nisl ac felis placerat eleifend.</p>
-
-<p>Morbi id ligula in neque dignissim consectetur. Ut sit amet faucibus urna, eu scelerisque ex. Pellentesque quis justo ligula. Sed dictum ligula magna, vitae tempus nisi consequat et. Cras aliquam, metus id finibus suscipit, velit erat tempus nunc, at varius nisl magna at eros. Suspendisse ut mollis quam. Integer et mi non libero dapibus ultrices. Mauris dictum velit mauris, at venenatis urna aliquam sit amet. Maecenas vel vehicula erat. Etiam laoreet orci ultrices, feugiat enim et, eleifend urna. Donec semper interdum nisi. Sed porttitor pulvinar elementum.</p>
+<p>So far this project has been a great success and I hope we are able to publish soon.
+The task has been extremely interesting and I was happy to have a chance to explore my passion for performance computing in a research setting.
+I am also happy this project gave me the opportunity to learn Julia, a language in which I had no prior experience but with which I am now very comfortable and productive.</p>
 
     </div>
   </body>

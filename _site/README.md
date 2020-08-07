@@ -7,6 +7,6 @@ Personal site of Miles Olson
 - [x] Icon links
 - [x] Images as links
 - [ ] Images to web format and better size
-- [ ] Photos in about page
-- [ ] Write content
+- [x] Photos in about page
+- [x] Write content
 - [ ] Favicon
